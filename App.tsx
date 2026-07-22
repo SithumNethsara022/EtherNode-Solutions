@@ -1,0 +1,35 @@
+import Scene from "./components/three/Scene";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
+import Process from "./components/Process";
+import Portfolio from "./components/Portfolio";
+import TechStack from "./components/TechStack";
+import Testimonials from "./components/Testimonials";
+import CTA from "./components/CTA";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
+export default function App() {
+  return (
+    <div className="relative min-h-screen overflow-x-hidden bg-[#04061a] text-white antialiased">
+      <Scene />
+      <Navbar />
+      <main className="relative z-10">
+        <Hero />
+        <About />
+        <Services />
+        <Process />
+        <Portfolio />
+        <TechStack />
+        <Testimonials />
+        <CTA />
+        <Contact />
+      </main>
+      <div className="relative z-10">
+        <Footer />
+      </div>
+    </div>
+  );
+}
