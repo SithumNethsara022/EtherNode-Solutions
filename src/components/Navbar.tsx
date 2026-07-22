@@ -43,23 +43,7 @@ export default function Navbar() {
         style={{ marginInline: scrolled ? "1rem" : "0" }}
       >
         <a href="#top" className="flex items-center gap-3" onClick={(e) => { e.preventDefault(); handleNav("#top"); }}>
-          <span className="relative flex h-9 w-9 items-center justify-center">
-            <svg viewBox="0 0 40 40" className="h-9 w-9">
-              <polygon
-                points="20,3 35,12 35,28 20,37 5,28 5,12"
-                fill="none"
-                stroke="url(#navGrad)"
-                strokeWidth="1.6"
-              />
-              <circle cx="20" cy="20" r="5" fill="url(#navGrad)" />
-              <defs>
-                <linearGradient id="navGrad" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stopColor="#5be3ff" />
-                  <stop offset="100%" stopColor="#9b8cff" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
+          <img src="/ethernode-logo.png" alt="EtherNode-Solutions" className="h-10 w-10 object-contain" />
           <span className="text-lg font-semibold tracking-tight text-white">
             Ether<span className="text-cyan-300">Node</span>
           </span>

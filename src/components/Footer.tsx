@@ -20,16 +20,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <svg viewBox="0 0 40 40" className="h-8 w-8">
-                <polygon points="20,3 35,12 35,28 20,37 5,28 5,12" fill="none" stroke="url(#footGrad)" strokeWidth="1.6" />
-                <circle cx="20" cy="20" r="5" fill="url(#footGrad)" />
-                <defs>
-                  <linearGradient id="footGrad" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#5be3ff" />
-                    <stop offset="100%" stopColor="#9b8cff" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <img src="/ethernode-logo.png" alt="EtherNode-Solutions" className="h-8 w-8 object-contain" />
               <span className="text-lg font-semibold tracking-tight text-white">
                 Ether<span className="text-cyan-300">Node</span>
               </span>
